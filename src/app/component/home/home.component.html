@@ -1,0 +1,7 @@
+<div *ngFor="let nome of nomes">
+  <button>{{nome}}</button>
+</div> 
+<div>
+  <input type="text" [(ngModel)]="nomeAtual">
+  <button (click)="addNome()">Adicionar</button>
+</div>
